@@ -4,6 +4,7 @@ local plr = game.Players.LocalPlayer
 function SHOP()
     while wait() do
         pcall(function()
+            wait(5)
             print("server hopping")
         local Servers = game.HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/2534724415/servers/Public?sortOrder=Asc&limit=100"))
         for i,v in pairs(Servers.data) do
